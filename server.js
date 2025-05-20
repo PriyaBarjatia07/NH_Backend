@@ -28,7 +28,7 @@ backend.use(routes);
 
 
 
-mongoose.connect("mongodb+srv://priyabarjatia1280:B376IInuAC4M6XK8@cluster1.0yizu2u.mongodb.net/")
+mongoose.connect(process.env.mongooseUrl)
 .then(() => {
     console.log(colors.green("✓ DB is connected with Backend"));
     const PORT =5001;
